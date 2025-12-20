@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TechstinctStore</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Techstinct<span style="color:var(--text-muted)">Store</span>.</a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section" style="padding-top: 150px;">
+        <div class="container contact-wrapper">
+            <div class="fade-in-up">
+                <h1>Get in Touch.</h1>
+                <p style="margin-bottom: 3rem; color: var(--text-muted); font-size: 1.1rem;">We're here to help you find your style. Available 24/7 for inquiries.</p>
+                
+                <div class="contact-info-item">
+                    <span class="contact-label">WhatsApp / Phone</span>
+                    <p class="contact-value">09026673982</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-label">Email</span>
+                    <p class="contact-value" style="font-size: 1.2rem;">techstinct@gmail.com</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-label">Availability</span>
+                    <p class="contact-value" style="font-size: 1.2rem;">Online 24/7</p>
+                </div>
+                
+                <button class="btn btn-primary" onclick="orderWhatsApp('General Inquiry', 0)">
+                    <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i> Quick Chat on WhatsApp
+                </button>
+            </div>
+
+            <div class="fade-in-up" style="background-color: var(--bg-surface); padding: 3rem;">
+                <h2 style="margin-bottom: 2rem;">Send a Message</h2>
+                <form onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.');">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>TechstinctStore.</h2>
+                    <p style="color: var(--text-muted);">Premium fashion for the modern individual. Quality, style, and substance.</p>
+                </div>
+                <div>
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Men</a></li>
+                        <li><a href="shop.html">Women</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <ul class="flex" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">09026673982<br>techstinct@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TechstinctStore. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

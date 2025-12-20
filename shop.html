@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collection | TechstinctStore</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Techstinct<span style="color:var(--text-muted)">Store</span>.</a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Layout -->
+    <section class="container shop-layout">
+        <aside class="filters fade-in-up">
+            <div class="filter-group">
+                <h3 class="filter-title">Categories</h3>
+                <div class="filter-options">
+                    <label>
+                        <input type="checkbox" name="category" value="shirts"> <span>Shirts</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="hoodies"> <span>Hoodies</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="pants"> <span>Pants & Trousers</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="outerwear"> <span>Outerwear</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="accessories"> <span>Accessories</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3 class="filter-title">Price Range</h3>
+                <input type="range" id="price-range" min="2000" max="200000" step="1000" value="200000" style="width: 100%;">
+                <p id="price-display" style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);"></p>
+            </div>
+        </aside>
+        
+        <main>
+            <div id="product-grid" class="product-grid">
+                <!-- Javascript will inject products here -->
+                <div style="grid-column: 1/-1; text-align: center; padding: 4rem;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--accent-color);"></i>
+                    <p>Loading Collection...</p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>TechstinctStore.</h2>
+                    <p style="color: var(--text-muted);">Premium fashion for the modern individual. Quality, style, and substance.</p>
+                </div>
+                <div>
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Men</a></li>
+                        <li><a href="shop.html">Women</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <ul class="flex" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">09026673982<br>techstinct@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TechstinctStore. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
