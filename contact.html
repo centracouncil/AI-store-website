@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | TechstinctStore</title>
-    <!-- Fonts -->
+    <title>Contact Us | PELUSCOSTORE</title>
+
     <link rel="stylesheet" href="style.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,7 +15,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Techstinct<span style="color:var(--text-muted)">Store</span>.</a>
+            <a href="index.html" class="logo">PELUSCO<span style="color:var(--text-muted)">STORE</span>.</a>
             
             <nav>
                 <ul class="nav-links">
@@ -40,18 +41,39 @@
     <!-- Contact Section -->
     <section class="section" style="padding-top: 150px;">
         <div class="container contact-wrapper">
+            
+            <!-- Contact Info -->
             <div class="fade-in-up">
                 <h1>Get in Touch.</h1>
-                <p style="margin-bottom: 3rem; color: var(--text-muted); font-size: 1.1rem;">We're here to help you find your style. Available 24/7 for inquiries.</p>
+                <p style="margin-bottom: 3rem; color: var(--text-muted); font-size: 1.1rem;">
+                    We're here to help you find your style. Available 24/7 for inquiries.
+                </p>
                 
                 <div class="contact-info-item">
-                    <span class="contact-label">WhatsApp / Phone</span>
-                    <p class="contact-value">09026673982</p>
+                    <span class="contact-label">WhatsApp</span>
+                    <p class="contact-value">
+                        <a href="https://wa.me/2348127165185" target="_blank">
+                            0812 716 5185
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-label">Phone Call</span>
+                    <p class="contact-value">
+                        <a href="tel:+2347052423118">
+                            0705 242 3118
+                        </a>
+                    </p>
                 </div>
 
                 <div class="contact-info-item">
                     <span class="contact-label">Email</span>
-                    <p class="contact-value" style="font-size: 1.2rem;">techstinct@gmail.com</p>
+                    <p class="contact-value" style="font-size: 1.2rem;">
+                        <a href="mailto:pelusco1@gmail.com">
+                            pelusco1@gmail.com
+                        </a>
+                    </p>
                 </div>
 
                 <div class="contact-info-item">
@@ -59,11 +81,17 @@
                     <p class="contact-value" style="font-size: 1.2rem;">Online 24/7</p>
                 </div>
                 
-                <button class="btn btn-primary" onclick="orderWhatsApp('General Inquiry', 0)">
-                    <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i> Quick Chat on WhatsApp
-                </button>
+                <a 
+                    href="https://wa.me/2348127165185" 
+                    class="btn btn-primary"
+                    target="_blank"
+                >
+                    <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>
+                    Quick Chat on WhatsApp
+                </a>
             </div>
 
+            <!-- Contact Form -->
             <div class="fade-in-up" style="background-color: var(--bg-surface); padding: 3rem;">
                 <h2 style="margin-bottom: 2rem;">Send a Message</h2>
                 <form onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.');">
@@ -79,9 +107,12 @@
                         <label for="message">Message</label>
                         <textarea id="message" class="form-textarea" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Send Message
+                    </button>
                 </form>
             </div>
+
         </div>
     </section>
 
@@ -89,10 +120,14 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
+
                 <div class="footer-brand">
-                    <h2>TechstinctStore.</h2>
-                    <p style="color: var(--text-muted);">Premium fashion for the modern individual. Quality, style, and substance.</p>
+                    <h2>PELUSCOSTORE.</h2>
+                    <p style="color: var(--text-muted);">
+                        Premium fashion for the modern individual. Quality, style, and substance.
+                    </p>
                 </div>
+
                 <div>
                     <h3>Shop</h3>
                     <ul class="footer-links">
@@ -102,6 +137,7 @@
                         <li><a href="shop.html">Accessories</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Company</h3>
                     <ul class="footer-links">
@@ -111,18 +147,24 @@
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>Connect</h3>
                     <ul class="flex" style="font-size: 1.5rem; margin-bottom: 1rem;">
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://wa.me/2348127165185"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="mailto:pelusco1@gmail.com"><i class="far fa-envelope"></i></a></li>
                     </ul>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">09026673982<br>techstinct@gmail.com</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        0812 716 5185<br>
+                        0705 242 3118<br>
+                        pelusco1@gmail.com
+                    </p>
                 </div>
+
             </div>
+
             <div class="copyright">
-                <p>&copy; 2025 TechstinctStore. All Rights Reserved.</p>
+                <p>&copy; 2025 PELUSCOSTORE. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
